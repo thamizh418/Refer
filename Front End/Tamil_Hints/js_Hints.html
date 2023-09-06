@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Hints</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            width: 50%;
+            /* height: 100px; */
+            /* border: 1px solid #000; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="message">hi</h1>
+    <div class="container">
+        <div class="box">
+            <label>Enter the celcius:
+                <input type="text" name="celcius" id="cel" placeholder=" in celcius" />
+            </label>
+            <button type="submit" onclick="convertCelciusToFarenheit()">
+                Convert
+            </button>
+        </div>
+        <div class="box">
+            <label>Enter the Farenheit:
+                <input type="text" name="farenheit" id="far" placeholder=" in farenheit" />
+            </label>
+            <button type="submit" onclick="convertFarenheitToCelcius()">
+                Convert
+            </button>
+        </div>
+    </div>
+
+    <div id="result"></div>
+
+    <div style="padding-top: 2%;">
+        <label>
+            to check how many letters ..&nbsp&nbsp&nbsp
+            <textarea id="textcount" name="comments" cols="15" rows="3"></textarea>
+        </label>
+        <button type="submit" onclick="countLetters()">Check</button>
+    </div>
+    
+    <div id="count_result"></div>
+
+    <div style="padding-top: 2%;">
+        <label>
+Enter the units consumed :
+            <input type="text" placeholder="in units" id="eb_unit">
+            <button type="submit" onclick="ebBillCalc()">Calculate</button>
+        </label>
+    </div>
+
+    <div id="eb_amount">
+
+    </div>
+
+    <script src="../Tamil_Hints/Js/java_script.js"></script>
+</body>
+
+</html>

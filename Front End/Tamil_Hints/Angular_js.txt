@@ -1,0 +1,77 @@
+- Introduction to AngularJS
+  - What is AngularJS?
+  - Features and Advantages
+  - AngularJS vs. Angular
+
+- Getting Started
+  - Setting Up Environment
+  - Directives
+  - Controllers and Modules
+  - Views and Templates
+
+- AngularJS Directives
+  - ng-app, ng-controller
+  - ng-model, ng-bind
+  - ng-repeat, ng-if
+  - Custom Directives
+
+- Data Binding
+  - One-Way Binding
+  - Two-Way Binding
+  - ng-model Directive
+  - $watch and $digest Cycle
+
+- Controllers and Modules
+  - Controllers and Scope
+  - Defining Controllers
+  - Scope and Communication
+  - Modules and Dependency Injection
+
+- Views and Templates
+  - HTML Templates
+  - Routing with ng-view
+  - ng-template and ng-include
+
+- Filters
+  - Using Built-in Filters
+  - Creating Custom Filters
+
+- Services and Factories
+  - Role of Services
+  - Creating Services/Factories
+  - Dependency Injection
+  - Common Built-in Services
+
+- Dependency Injection
+  - Understanding DI
+  - Using Dependency Injection
+
+- Scopes
+  - Scope Hierarchy
+  - Scope Inheritance
+  - $rootScope
+  - Scope Events
+
+- Routing and SPAs
+  - ngRoute Module
+  - Route Configuration
+  - Creating Single Page Apps
+
+- Forms and Validation
+  - AngularJS Form Directive
+  - Form Controls
+  - Form Validation and Custom Validators
+
+- AJAX and Promises
+  - $http Service
+  - Promises and Async Requests
+
+- Testing in AngularJS
+  - Unit Testing with Jasmine
+  - End-to-End Testing with Protractor
+
+- Best Practices
+  - Separation of Concerns
+  - Code Organization
+  - Performance Tips
+  - Community Resources

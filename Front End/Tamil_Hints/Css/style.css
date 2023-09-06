@@ -1,0 +1,141 @@
+
+/* !important - overides all props */
+/* type selector prefers last props if multiple given */
+
+*{
+    /* affects entire page - universal selector */
+   
+    /* color - rgba for opacity last 0.1 */
+    /* font - px,%,em (16px - 100%) - (16px - 1em) */
+
+    /* color: black ; */
+    /* color:  rgb(0, 0, 0); */
+    color:  rgba(0, 0, 0,0.3);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: oblique;
+    font-stretch: expanded;
+    text-transform: capitalize;
+    text-decoration: overline;
+    letter-spacing: .25em;
+    word-spacing: .5em;
+    text-align: right;
+    vertical-align: bottom;
+    line-height: 1.5em;
+    text-indent: 50px;
+    text-shadow: 1px 1px 1px grey;
+    border: 1px dotted black;
+}
+
+h3{
+    /* affects tag named h3 - type selector */
+    text-transform: uppercase;
+}
+
+#id_1{
+    /* affects id name - id selector */
+    color: chartreuse;
+}
+
+.class_1{
+    /* affects class name - class selector */
+    color: chocolate;
+}
+
+h2,h3{
+    /* affects both h2 and h3 all tags - type selector */
+    text-decoration: underline;
+}
+
+div>p{
+    /* affects only p tag inside div - child selector */
+    color: yellow;
+}
+
+div span{
+ /* affects all span inside div - descendant selector (div>p>span) */
+    color: coral;
+}
+
+h1~h5{
+    /* affects only h5 tag inside h1 - sibbling selector */
+    color: aqua;
+}
+
+h1+h6{
+    /* affects only h6 tag if h1 is immediate tag next to h6 - adjacent sibbling selector */
+    color: blue;
+}
+
+*:first-letter{
+    /* first-line - pseudo props  */
+        font-size: 2em;
+    }
+
+a:link{
+    /* normal link */
+    color: blue;
+}
+a:visited{
+    /* visted link */
+    color: blueviolet;
+}
+a:hover{
+    /* on hover link */
+    color: brown;
+}
+a:active{
+/* on clicking link */
+    color: aquamarine;
+}
+a:focus{
+    /* on pressing tab focus gets */
+    color: yellowgreen;
+}
+
+div[class]{
+    /* div having any class gets props */
+    text-align: left;
+color: crimson ;
+}
+
+div[class~=class_1]{
+    /* div having atlst class named class_1 gets props */
+    text-align: right;
+    color: blue;
+}
+
+div[class*='ss']{
+/* *='ss' - ^='first word' - $='last word' in class name */
+    color: black;
+}
+
+.newspapper{
+    width: 45%;
+    /* height: 100px; */
+    display: inline-block;
+    overflow: scroll;
+    padding: 5px;
+    margin: 20px auto 20px auto;
+
+    border-radius:80px 50px;
+    -moz-border-radius:80px 50px;
+    -webkit-border-radius:80px 50px;
+
+    box-shadow: inset 10px 10px 10px gray;
+    -moz-box-shadow:10px 10px 10px gray;
+    -webkit-box-shadow:10px 10px 10px gray;
+    
+}
+
+#rrr{
+    color: red;
+    border: 30px solid ;
+    /* round */
+    border-image: url(../Images/png-transparent-github-git-hub-social-icons-color-icon-thumbnail.png) 30 stretch;
+}
+
+
+/* 4:35:38 */

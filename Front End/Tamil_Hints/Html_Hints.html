@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- type -> ! and press enter -> emnet abbr -->
+<html lang="en">
+
+    <head>
+        <!-- all kinds of char set supports -->
+        <meta charset="UTF-8">
+        <!-- supports browser types if mentioned -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- search engine usage and format neat and responsive -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- title and description for page -->
+        <meta name="author" content="bharathi">
+
+        <link rel="stylesheet" href="../Tamil_Hints/Css/style.css">
+        
+        <title>Website name</title>
+
+        <style>
+            table{
+                border: 1px solid rgb(248, 0, 153);
+                /* border-collapse: collapse; */
+            }
+            th, td{
+                border: 1px solid rgb(50, 0, 248);
+                padding: 5px;
+            }
+        </style>
+        
+    </head>
+
+<body>
+    <center>
+
+        <h1 id="home">big</h1>
+        <h6>small</h6>
+<br>
+        <p><i>ittalic...</i><b>bold...</b>paragraph...a<sup>2</sup>....H<sub>2</sub>o</p>
+        <p>
+            <!-- inline tags -> <a>,<img>,<span> -->
+            <span style="color: red;">Hello World..</span>..this is tamil
+        </p>
+        <p>
+            <strong>bold-strong</strong> 
+            <em>ittalic-em</em> 
+            <q>quotes</q> 
+            <blockquote>blockquote</blockquote> 
+            <abbr title="world health organistation">abbr-WHO</abbr> 
+            <cite>cite-wings of fire</cite> 
+            <dfn>inidan politics </dfn> 
+            <address>abc@gmail.com</address>
+            <del>del-sold out</del>
+            <s>s-sold out</s>
+            <ins>ins-new insert</ins>
+            <u>u-underline</u>
+        </p>
+<br>
+        <figure>
+            <img style="width: 100px;" src="../Tamil_Hints/Images/141-1419071_github-hd-png-download.png" alt="can't load image name will displayed..">
+            <figcaption>image caption</figcaption>
+            <img style="width: 100%;" title="gitHub" src="../Tamil_Hints/Images/141-1419071_github-hd-png-download.png" alt="can't load image name will displayed..">
+            <figcaption>gitHub</figcaption>
+        </figure>
+<br>
+        <a href="link.html">click here</a><br>
+        <a href="link.html" target="_blank">click here new tab</a><br>
+        <a href="mailto:tamiilkhs@gmail.com">Send a mail</a><br>
+        <a href="link.html#end">end page</a><br>
+        <a href="#home">home</a>
+<br>
+        <ol style="text-align: left;" type="a" start="2">
+            <li>Tamil</li>
+            <li>English</li>
+            <ul>
+                <li>english-1</li>
+                <li>english-2</li>
+            </ul>
+        </ol>
+
+        <ul style="text-align: left;">
+            <li>Tamil</li>
+            <li>English</li>
+            <dl>
+                <dt>Tamil:</dt>
+                <dd>Oldest language in the world</dd>
+                <dd>most unique and independent language</dd>
+                <dd>easy to learn</dd>
+            </dl>
+        </ul>
+<br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categories</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Language</td>
+                    <td>Tamil</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Cut-Off</td>
+                    <td>Maths</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>science</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>500</td>
+                </tr>
+            </tfoot>
+        </table>
+<br>
+        <form action="link.html" method="POST" enctype="multipart/form-data">
+             <!-- method="GET"- displays email,username,password in url / "POST" dosn't show-->
+             <!-- enctype="multipart/form-data" to send multi part our files to server not a single part , it cant -->
+            <div>
+                <label for="email">Email Id:</label>
+                <input type="email" name="email" id="email" >
+            </div>
+
+            <div>
+                <label>User Name:
+                 <input type="text" name="username" value="Tamil">
+                </label>
+            </div>
+
+            <div>
+                <label>Age:
+                     <!-- maxlength wont work for number type - need js  -->
+                 <input type="number" name="age" min="1" max="99" step="2" > 
+                </label>
+            </div>
+
+            <div>
+                <label>DOB:
+                 <input type="date" name="dob" min="2000-01-01" max="2023-01-01">
+                </label>
+            </div>
+
+            <div>
+                <label>Url Link:
+                 <input type="url" name="link" >
+                </label>
+            </div>
+
+            <div>
+                <label>Phone:
+                 <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+                </label>
+            </div>
+
+            <div>
+                <label>Search:
+                 <input type="search" name="search" >
+                </label>
+            </div>
+
+            <div>
+                <!-- value =""  must for radio button to get which option is selected -->
+                <label>Gender:</label>
+                <label>Male
+                 <input type="radio" name="gender" value="male">
+                </label>
+                <label>Female
+                 <input type="radio" name="gender" value="female">
+                </label>
+            </div>
+
+            <div>
+                <label>Select One Subject:</label>
+                <select name="subject" >
+                    <option value="tamil">Tamil</option>
+                    <option value="english" label = "English"></option>
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="social">Social</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Select Multiple Subject:</label>
+                <select name="subject" multiple>
+                    <option value="tamil">Tamil</option>
+                    <option value="english" label = "English"></option>
+                    <option value="maths">Maths</option>
+                    <option value="science">Science</option>
+                    <option value="social">Social</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Upload:
+                    <input type="file" name="file">
+                </label>
+            </div>
+
+            <div>
+                <label>Comments:
+                 <textarea name="comments" cols="15" rows="4">Enter Your Comments...</textarea>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="agree">
+                <label>Agree
+                </label>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password" minlength="8"  maxlength="10" required>
+            </div>
+
+            <div>
+                <input type="hidden" name="hidden">
+            </div>
+
+            <div>
+                <input type="image" src="../Tamil_Hints/Images/06904e932e6780865b2ab595d123b996.jpg" width="10%">
+                <!-- automatticlly considers image as submit -->
+                <button type = "reset">Reset</button>
+                <button type = "submit">Sign-up</button>
+            </div>
+
+        </form>
+<br>
+<audio src="../Tamil_Hints/audios/Ghilli Arjunar Villu Remix Full screen status_320kbps.mp3" controls autoplay loop preload="metadata" muted>format not supported</audio>
+<audio src="../Tamil_Hints/audios/Ghilli Arjunar Villu Remix Full screen status_320kbps.mp3" controls  loop preload="none">format not supported</audio>
+<audio controls preload="auto">
+    <source src="../Tamil_Hints/audios/Ghilli Arjunar Villu Remix Full screen status_320kbps.mp3">format not supported
+</audio>
+<br>
+
+<video src="../Tamil_Hints/videos/bathing.mp4" width="30%" controls poster="../Tamil_Hints/Images/download (1).png" muted type="video/mp4">format not supported</video>
+
+<br>
+
+    <iframe src="link.html" frameborder="0" width="600" height="450" style="border: 0;" allowfullscreen="" loading = "lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+    </center>
+</body>
+</html>
+
