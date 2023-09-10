@@ -18,7 +18,7 @@ git commit -m "First Commit"
 git push origin main
 
 
-
+git pull
 
 
 //index lock
