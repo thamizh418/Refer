@@ -1,0 +1,26 @@
+git 
+git version
+
+git config --global user.name "thamizh418"
+git config --global user.email "thamizhkhs418@gmail.com"
+
+git clone https://github.com/thamizh418/Refer.git
+cd refer
+
+git status
+
+git add test2.txt
+git add -u
+git add "Front End/Tamil_Hints/php/"
+
+git commit -m "First Commit"
+
+git push origin main
+
+
+
+
+
+//index lock
+cd C:/Users/tamii/Desktop/Front End/Refer/
+del .git\index.lock
