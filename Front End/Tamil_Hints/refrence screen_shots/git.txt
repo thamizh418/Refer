@@ -11,16 +11,30 @@ git status
 
 git add test2.txt
 git add -u
+git add .
 git add "Front End/Tamil_Hints/php/"
 
 git commit -m "First Commit"
 
 git push origin main
 
-
 git pull
 
+git init // to create repo
+git remote add origin // to shift repo
+
+git branch  // to view branch
+git branch -a // all branch
+git branch -M main 
+
+git checkout main // to change branch
+
+git diff main // diff btwn branches
+
+git merge main // merging branches
 
 //index lock
 cd C:/Users/tamii/Desktop/Front End/Refer/
 del .git\index.lock
+
+press Q // to type
